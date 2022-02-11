@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Geometric figures | Javascript practic course </title>
+</head>
+<body>
+    <header>
+        <h1>
+            Geometric figures
+        </h1>
+        <p>
+            This is the first workshop of Javascript practic course
+        </p>   
+    </header>
+    <section>
+        <h2>
+            Calculate the area and perimeter of a square
+        </h2>
+        <form action="">
+            <label for="InputSquare"> Please, enter the size of the side for your square: </label>
+            <input type="number" id="InputSquare">
+            <button type="button" onclick="squarePerimeter()">  
+                Calculate the perimeter
+            </button>
+            <button type="button" onclick="squareArea()">
+                Calculate the area
+            </button>
+        </form>
+    </section>
+    <section>
+        <h2>
+            Calculate the area and perimeter of a triangle
+        </h2>
+        <form action="">
+            <label for="InputTriangle_1"> Please, enter the first size for your triangle: </label>
+            <input type="number" id="InputTriangle_1">
+            <label for="InputTriangle_2"> Please, enter the second size for your triangle: </label>
+            <input type="number" id="InputTriangle_2">
+            <label for="InputTriangle_base"> Please, enter the base for your triangle: </label>
+            <input type="number" id="InputTriangle_base">
+            <button type="button" onclick="trianglePerimeter()">  
+                Calculate the perimeter
+            </button>
+            <input type="number" id="InputTriangle_height">
+            <label for="InputTriangle_height"> Please, enter the height for your triangle: </label>
+            <button type="button" onclick="triangleArea()">
+                Calculate the area
+            </button>
+        </form>
+    </section>
+
+    <section>
+        <h2>
+            Calculate the area and perimeter of an Isosceles triangle
+        </h2>
+        <form action="">
+            <label for="isosceles_1"> Please, enter the first size for your triangle: </label>
+            <input type="number" id="isosceles_1">
+            <label for="isosceles_2"> Please, enter the second size for your triangle: </label>
+            <input type="number" id="isosceles_2">
+            <label for="isosceles_base"> Please, enter the base for your triangle: </label>
+            <input type="number" id="isosceles_base">
+            <button type="button" onclick="isoscelesPerimeter()">  
+                Calculate the isosceles perimeter
+            </button>
+            <input type="number" id="isosceles_height">
+            <label for="isosceles_height"> Please, enter the height for your triangle: </label>
+            <button type="button" onclick="isoscelesArea()">
+                Calculate the isosceles area
+            </button>
+        </form>
+    </section>
+
+    <section>
+        <h2>
+            Calculate the area and perimeter of a circle
+        <form action="">
+            <label for="InputCircle"> Please, enter the radium for your circle: </label>
+            <input type="number" id="InputCircle">
+            <button type="button" onclick="circumference()">  
+                Calculate the perimeter
+            </button>
+            <button type="button" onclick="circleArea()">
+                Calculate the area
+            </button>
+        </form>
+    </section>
+    <script src="clase_8.js"></script>
+</body>
+</html>
