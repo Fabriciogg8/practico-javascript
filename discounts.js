@@ -14,3 +14,11 @@ function calculatePriceWithDiscount(originalPrice, discount){
 //     finalPrice
 // });
 
+function discountPrice(){
+    const inPrice = document.getElementById("inputPrice").value;
+    const inDiscount = document.getElementById("inputDiscount").value;
+    const discPrice = calculatePriceWithDiscount(inPrice, inDiscount);
+
+    const finalPrice = document.getElementById("resultPrice");
+    finalPrice.innerText = "The final price of your product is: $" + discPrice;
+};
