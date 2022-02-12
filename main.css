@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+div {
+    border: #CAED55 20px solid;
+    display: flex;
+    justify-content: flex-start;
+}
+label{
+    padding: 10px;
+}
+input {
+    margin: 10px;
+    width: 80px;
+}
+#div_button{
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+button {
+    border: #CAED55 8px groove;
+    background-color: beige;
+    margin: 5px;
+    width: 150px;
+}
+p{
+    margin-left: 15px;
+}
