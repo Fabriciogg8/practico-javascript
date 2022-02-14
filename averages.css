@@ -107,6 +107,7 @@ input:focus{
 button{
     height: 40px;
     width: 30;
+    margin-top: 4px;
     margin-left: 5px;
     border-radius: 20px;
     background-color: #93cc78;
