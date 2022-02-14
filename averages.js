@@ -15,8 +15,9 @@ function average(){
     sumlist += myList[i];
     };
     
+    let decimals = document.getElementById("decimals").value
     const averageList = document.getElementById("paverage");
-    averageList.innerText = "The average result is = " + sumlist / myList.length; 
+    averageList.innerText = "The average result is = " + (sumlist / myList.length).toPrecision(decimals); 
 };
 
 // Median
@@ -41,8 +42,10 @@ function findMedian(){
         const middleList_1 = parseInt(myList.length / 2);
         median = myList[middleList_1]
     };    
+
+    let decimals = document.getElementById("decimals1").value;
     const finalMedian = document.getElementById("pmedian");
-    return finalMedian.innerText = "The median result is = " + median; 
+    return finalMedian.innerText = "The median result is = " + median.toPrecision(decimals); 
 };
 
 // Mode
@@ -81,19 +84,33 @@ function findMode(){
 
 
 function weightedMean(){
-    let myObject = document.getElementById("lweightedMean")
-    const values = []
-    const listdays = []
+    let text1 = document.getElementById("l1weightedMean").value;
+    text1 = text1.split(",");
 
-    myObject.forEach(function(measure){
-    values.push(measure.weight * measure.days)
-    listdays.push(measure.days)
+    let listdays = [];
+    text1.forEach(function(i){
+        i = parseInt(i);
+        listdays.push(i)
     });
+
+    let text2 = document.getElementById("l2weightedMean").value;
+    text2 = text2.split(",");
+
+    let values = [];
+    text2.forEach(function(i){
+        i = parseInt(i);
+        values.push(i)
+    });
+
+    let finalValues = [];
+    for(var i = 0; i<values.length; i++){
+        finalValues.push(values[i]*listdays[i])
+    }
 
     let totalValue = 0;
 
-    for(var i = 0; i < values.length; i++){
-    totalValue += values[i];
+    for(var i = 0; i < finalValues.length; i++){
+    totalValue += finalValues[i];
     }
 
     let totalDays = 0;
@@ -102,6 +119,7 @@ function weightedMean(){
     totalDays += listdays[i];
     }
 
+    let decimals = document.getElementById("decimals3").value;
     const finalResult = document.getElementById("pweightedMean");
-    finalResult.innerText = totalValue / totalDays 
+    return finalResult.innerText = "The Weighted Mean is: " + (totalValue / totalDays).toPrecision(decimals) 
 };
