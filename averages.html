@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="averages.css">
+    <title> Averages | Means </title>
+</head>
+<body>
+    <header>
+        <h1>
+            Calculate diferent means
+        </h1>
+    </header>
+    <main>
+    <section>
+        <div>
+            <h2>
+                Average
+            </h2>
+        </div>
+        <form action="">
+            <label for="laverage"> Calculate average </label>
+            <input type="text" id="laverage" placeholder="e.g. 1,2,3">
+            <button type="button" onclick="average()"> Execute Average </button>
+        </form>
+        <p id="paverage"> </p>
+    </section>
+    <section>
+        <div>
+            <h2>
+                Median
+            </h2>
+        </div>
+        <form action="">
+            <label for="lmedian"> Calculate median </label>
+            <input type="text" id="lmedian" placeholder="e.g. 8,7,6">
+            <button type="button" onclick="findMedian()"> Execute Median </button>
+        </form>
+        <p id="pmedian"> </p>
+    </section>
+    <section>
+        <div>
+            <h2>
+                Mode
+            </h2>
+        </div>
+        <form action="">
+            <label for="lmode"> Calculate mode </label>
+            <input type="text" id="lmode" placeholder="e.g. 5,5,8,8,6">
+            <button type="button" onclick="findMode()"> Execute Mode </button>
+        </form>
+        <p id="pmode"> </p>
+    </section>
+    <section>
+        <div>
+            <h2>
+                Weighted Mean
+            </h2>
+        </div>
+        <form action="">
+            <label for="lweightedMean"> Calculate Weighted Mean </label>
+            <input type="text" id="lweightedMean">
+            <button type="button" onclick="weightedMean()"> Execute Weighted Mean </button>
+        </form>
+        <p id="pweightedMean"> </p>
+    </section>
+    </main>
+    <script src="./averages.js">
+    </script>
+</body>
+</html>

@@ -37,5 +37,5 @@ function findMode(list_1){
     function(a, b){return a[1]-b[1]}
     );
     
-    return mode = listArray[listArray.length - 1]
+    return mode = parseInt(listArray[listArray.length - 1][0])
 };
